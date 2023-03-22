@@ -13,7 +13,7 @@ import {MemoizedChild} from './Child';
     <div>Parent
         {count}
         <button onClick={()=> setcount(prevCount => prevCount+1)}>Increment</button>
-        <MemoizedChild handleClick={memoizedClick} />
+         <MemoizedChild handleClick={memoizedClick} />  {/* callback function is passed as props */}
     </div>
   )
 }
